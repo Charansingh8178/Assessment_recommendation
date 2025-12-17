@@ -2,7 +2,8 @@ import streamlit as st
 import requests
 
 
-API_URL = "http://127.0.0.1:8000/recommend" 
+API_URL = "https://charanss1-shl-assessment-recommender.hf.space/recommend"
+
 
 st.set_page_config(page_title="SHL Assessment Recommender", layout="centered")
 
@@ -53,3 +54,4 @@ if st.button("Get Recommendations"):
 
             except Exception as e:
                 st.error(f"Failed to connect : {e}")
+
